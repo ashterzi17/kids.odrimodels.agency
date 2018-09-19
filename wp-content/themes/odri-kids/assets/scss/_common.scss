@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'no_name_37light';
+    src: url('../fonts/no-name-37.light.woff2') format('woff2'),
+         url('../fonts/no-name-37.light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'no_name_37regular';
+    src: url('../fonts/no-name-37.regular.woff2') format('woff2'),
+         url('../fonts/no-name-37.regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Font Awesome Reg'; /* Имя шрифта */
+    src: url('../fonts/Font_Awesome_5_Free-Regular-400.otf'); /* Путь к файлу со шрифтом */
+   }
+@font-face {
+    font-family: 'Font Awesome Reg Brands'; /* Имя шрифта */
+    src: url('../fonts/Font_Awesome_5_Brands-Regular-400.otf '); /* Путь к файлу со шрифтом */
+      }
+
+// variables
+$head-font-light: 'no_name_37light', normal;
+$head-font-reg: 'no_name_37regular', normal;
+$awesome-brands: 'Font Awesome Reg Brands';
+$awesome-reg: 'Font Awesome Reg';
+
+* {
+	outline: none;
+	transition: all 0.1s ease-in;
+}
+body {
+	display: flex;
+  	min-height: 100vh;
+  	flex-direction: column;
+	background-image: url('../img/background.png');
+	background-size: cover;
+}
+main {
+  flex: 1; 
+}
+.container {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+}
+

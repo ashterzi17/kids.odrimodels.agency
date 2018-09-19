@@ -1,0 +1,87 @@
+.modschool {
+width: 100%;
+padding-top: 30px;
+padding-bottom: 30px;
+@media (max-width: 999px) {
+  width: 95%;
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+@media (max-width: 599px) {
+  width: 95%;
+  margin: 0 auto;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+  &__heading {
+    font-family: $head-font-reg;
+    color: #454545;
+    text-align: center;
+    text-transform: uppercase;
+    &--rus {
+      text-transform: uppercase;
+    }
+  }
+  &__text {
+    font-family: $head-font-light;
+    color: #454545;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    &--mod {
+      padding-top: 20px;
+    }
+  }
+}
+
+.program {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;justify-content: space-between;
+  margin-top: 30px;
+}
+.programinfo {
+  box-sizing: border-box;
+  width: 50%;
+  
+  @media (max-width: 999px) {
+    width: 100%;
+  }
+  @media (max-width: 599px) {
+    width: 100%;
+  }
+  &__heading {
+    font-family: $head-font-reg;
+    color: #454545;
+    text-transform: uppercase;
+  }
+  &__description {
+    font-family: $head-font-light;
+    color: #454545;
+    font-size: 20px;
+  }
+  &__img {
+    display: block;
+    width: 100%;
+  }
+  &--right {
+    padding-right: 20px;
+
+}
+  &--left {
+    padding-left: 20px;
+
+  }
+
+}
+.cont {
+  height: 100%;
+  position: relative;
+}
+.conttwo {
+  position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}

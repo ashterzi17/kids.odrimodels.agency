@@ -1,0 +1,446 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'no_name_37light';
+  src: url("../fonts/no-name-37.light.woff2") format("woff2"), url("../fonts/no-name-37.light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'no_name_37regular';
+  src: url("../fonts/no-name-37.regular.woff2") format("woff2"), url("../fonts/no-name-37.regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Font Awesome Reg';
+  /* Имя шрифта */
+  src: url("../fonts/Font_Awesome_5_Free-Regular-400.otf");
+  /* Путь к файлу со шрифтом */ }
+@font-face {
+  font-family: 'Font Awesome Reg Brands';
+  /* Имя шрифта */
+  src: url("../fonts/Font_Awesome_5_Brands-Regular-400.otf ");
+  /* Путь к файлу со шрифтом */ }
+* {
+  outline: none;
+  transition: all 0.1s ease-in; }
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-image: url("../img/background.png");
+  background-size: cover; }
+
+main {
+  flex: 1; }
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto; }
+
+.kids-nav {
+  width: 100%; }
+
+.kids-nav-list {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%; }
+  .kids-nav-list__item {
+    position: relative; }
+    .kids-nav-list__item--mod {
+      width: 17%; }
+    .kids-nav-list__item:before {
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+      content: ""; }
+  .kids-nav-list__logo {
+    width: 100%;
+    display: block; }
+  .kids-nav-list__link {
+    color: #454545;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "no_name_37regular", normal;
+    letter-spacing: 1px;
+    font-size: 1.1em; }
+    .kids-nav-list__link:hover {
+      color: #931698; }
+
+.slider {
+  width: 100%; }
+
+.slide {
+  width: 100%;
+  display: flex;
+  flex-direction: row; }
+
+.q-sections {
+  width: 20%;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: solid;
+  border-color: rgba(167, 167, 167, 0.5);
+  border-width: 10px; }
+
+.pagename {
+  font-family: "no_name_37regular", normal;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  text-align: center;
+  padding-top: 30px;
+  color: #454545; }
+
+@media (max-width: 599px) {
+  .pagename {
+    padding-top: 15px; } }
+.models {
+  width: 100%;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  @media (max-width: 900px) {
+    .models {
+      justify-content: space-around; } }
+  @media (max-width: 599px) {
+    .models {
+      justify-content: space-around; } }
+
+.model {
+  width: 24.5%;
+  margin-top: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  filter: grayscale(100%); }
+  @media (max-width: 900px) {
+    .model {
+      width: 32%; } }
+  @media (max-width: 599px) {
+    .model {
+      width: 48%; } }
+  .model__imgprev {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: all 0.3s ease; }
+    .model__imgprev:hover {
+      transform: scale(1.1);
+      transition: all 0.3s ease; }
+  .model__name {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "no_name_37light", normal;
+    background-color: rgba(57, 57, 57, 0.73);
+    color: white; }
+  .model:hover {
+    filter: grayscale(0%);
+    transition: all 0.3s ease; }
+
+.model-profile {
+  padding: 35px 0;
+  display: flex;
+  flex-direction: column; }
+  @media (max-width: 900px) {
+    .model-profile {
+      flex-direction: column; } }
+
+.model-info {
+  width: 100%; }
+  @media (max-width: 900px) {
+    .model-info {
+      width: 90%;
+      margin: 0 auto; } }
+  .model-info__name {
+    font-family: "no_name_37regular", normal;
+    text-transform: uppercase; }
+    .model-info__name--rus {
+      font-family: "no_name_37light", normal; }
+
+.modelinfonew {
+  width: 100%; }
+
+.newinfo {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.newinfo-item span {
+  display: block;
+  text-align: center; }
+
+.newinfo-item__name {
+  font-family: "no_name_37regular", normal;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.2em;
+  color: #474747;
+  padding-bottom: 10px;
+  position: relative; }
+  .newinfo-item__name::before {
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    width: 50%;
+    border-bottom: 3px solid #931698;
+    content: ""; }
+.newinfo-item__value {
+  font-family: "no_name_37light", normal;
+  text-transform: lowercase;
+  font-size: 1.1em;
+  padding-top: 10px; }
+
+.model-slider {
+  padding-top: 30px; }
+
+.model-slide__img {
+  display: block;
+  width: 100%;
+  filter: grayscale(100%);
+  transition: all 0.3s ease-in; }
+  .model-slide__img:hover {
+    filter: grayscale(0%);
+    transition: all 0.3s ease-in; }
+
+.project-items {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.project-item {
+  width: 30%;
+  height: 350px; }
+
+.modschool {
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  @media (max-width: 999px) {
+    .modschool {
+      width: 95%;
+      margin: 0 auto;
+      padding-top: 15px;
+      padding-bottom: 15px; } }
+  @media (max-width: 599px) {
+    .modschool {
+      width: 95%;
+      margin: 0 auto;
+      padding-top: 15px;
+      padding-bottom: 15px; } }
+  .modschool__heading {
+    font-family: "no_name_37regular", normal;
+    color: #454545;
+    text-align: center;
+    text-transform: uppercase; }
+    .modschool__heading--rus {
+      text-transform: uppercase; }
+  .modschool__text {
+    font-family: "no_name_37light", normal;
+    color: #454545;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center; }
+    .modschool__text--mod {
+      padding-top: 20px; }
+
+.program {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px; }
+
+.programinfo {
+  box-sizing: border-box;
+  width: 50%; }
+  @media (max-width: 999px) {
+    .programinfo {
+      width: 100%; } }
+  @media (max-width: 599px) {
+    .programinfo {
+      width: 100%; } }
+  .programinfo__heading {
+    font-family: "no_name_37regular", normal;
+    color: #454545;
+    text-transform: uppercase; }
+  .programinfo__description {
+    font-family: "no_name_37light", normal;
+    color: #454545;
+    font-size: 20px; }
+  .programinfo__img {
+    display: block;
+    width: 100%; }
+  .programinfo--right {
+    padding-right: 20px; }
+  .programinfo--left {
+    padding-left: 20px; }
+
+.cont {
+  height: 100%;
+  position: relative; }
+
+.conttwo {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.contact-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 30px; }
+  @media (max-width: 900px) {
+    .contact-flex {
+      width: 100%;
+      margin: 0 auto;
+      flex-direction: column; } }
+
+.contact-info {
+  width: 45%; }
+  @media (max-width: 900px) {
+    .contact-info {
+      width: 95%;
+      margin: 0 auto; } }
+  .contact-info__heading {
+    font-family: "no_name_37regular", normal;
+    text-transform: uppercase;
+    color: #454545; }
+    .contact-info__heading--mod {
+      margin-top: 50px; }
+  .contact-info__list-item {
+    font-family: "no_name_37light", normal;
+    font-weight: 300;
+    font-style: italic;
+    color: #454545; }
+  .contact-info__link {
+    text-decoration: none;
+    color: #454545; }
+
+.contact-map {
+  width: 50%; }
+  @media (max-width: 900px) {
+    .contact-map {
+      width: 100%;
+      margin: 0 auto; } }
+  .contact-map__heading {
+    font-family: "no_name_37regular", normal;
+    text-transform: uppercase;
+    color: #454545; }
+
+.address::before {
+  font-family: "Font Awesome Reg";
+  content: '\f1ad';
+  font-style: normal; }
+
+.phone::before {
+  font-family: "Font Awesome Reg";
+  content: '\f007';
+  font-style: normal; }
+
+.email::before {
+  font-family: "Font Awesome Reg";
+  content: '\f0e0';
+  font-style: normal; }
+
+#map-main {
+  width: 100%;
+  height: 50vh;
+  filter: grayscale(100%);
+  transition: filter 0.4s ease; }
+  #map-main:hover {
+    filter: grayscale(0%);
+    transition: filter 0.4s ease-in; }
+
+.kids-footer {
+  background-color: #454545; }
+
+.footer-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px 0; }
+
+.footer-logo {
+  width: 15%; }
+  .footer-logo__img {
+    width: 100%; }
+
+.footer-info {
+  width: 60%;
+  display: flex;
+  flex-direction: row; }
+  .footer-info::before {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    content: ""; }
+  .footer-info__item::before {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    content: ""; }
+  .footer-info__link {
+    text-decoration: none;
+    color: #c8c8c8;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+    .footer-info__link::before {
+      display: inline-block;
+      vertical-align: middle; }
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 15%; }
+  .social-media--mod {
+    width: 30%; }
+  .social-media__link {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 2em; }
+    .social-media__link--mod {
+      color: #474747;
+      font-size: 1.5em; }
+    .social-media__link::after {
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+      content: ""; }
+    .social-media__link:hover {
+      color: #931698; }
+
+.fb::after, .yt::after, .insta::after {
+  display: inline-block;
+  vertical-align: middle; }
+
+.fb::before {
+  content: '\f39e';
+  font-family: "Font Awesome Reg Brands"; }
+
+.yt::before {
+  content: '\f167';
+  font-family: "Font Awesome Reg Brands"; }
+
+.insta::before {
+  content: '\f16d';
+  font-family: "Font Awesome Reg Brands"; }
+
+/*# sourceMappingURL=main.css.map */

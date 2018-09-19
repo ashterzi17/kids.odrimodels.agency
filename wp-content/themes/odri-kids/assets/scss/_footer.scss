@@ -1,0 +1,88 @@
+.kids-footer {
+	background-color: #454545;
+}
+.footer-section {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 5px 0;
+}
+.footer-logo {
+	width: 15%;
+	&__img {
+		width: 100%;
+	}
+}
+.footer-info {
+	width: 60%;
+	display: flex; 
+	flex-direction: row;
+	&::before {
+		    display: inline-block;
+    		height: 100%;
+    		vertical-align: middle;
+    		content: "";
+	}
+	&__item {
+		&::before{
+			display: inline-block;
+    		height: 100%;
+    		vertical-align: middle;
+    		content: "";
+		}
+	}
+	&__link{
+		text-decoration: none;
+		color: rgb(200,200,200);
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		&::before {
+			display: inline-block;
+    	vertical-align: middle;	
+		}
+	}
+}
+.social-media {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 15%;
+	&--mod {
+		width: 30%;
+	}
+	&__link {
+		display: block;
+        text-decoration: none;
+        color: white;
+        font-size: 2em;
+        &--mod {
+        	color: #474747;
+        	font-size: 1.5em;
+        }
+        &::after {
+        	display: inline-block;
+    		height: 100%;
+    		vertical-align: middle;
+    		content: "";
+        }
+        &:hover {
+        	color: rgb(147, 22, 152);
+        }
+	}
+}
+.fb::after, .yt::after, .insta::after {
+		display: inline-block;
+    	vertical-align: middle;	
+}
+.fb::before {
+  content: '\f39e';
+  font-family: "Font Awesome Reg Brands"; }
+
+.yt::before {
+  content: '\f167';
+  font-family: "Font Awesome Reg Brands"; }
+
+.insta::before {
+  content: '\f16d';
+  font-family: "Font Awesome Reg Brands"; }
